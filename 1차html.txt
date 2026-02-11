@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1><a href="#"><img src="./images/logo.png" alt=""></a></h1>
+            <div class="right">
+                <div class="lang_menu">
+                    <select name="language">
+                        <option id="choice" value="choice">언어선택</option>
+                        <!-- <option value="ko">한국어</option> -->
+                        <option id="en" value="en">English</option>
+                        <option id="ja" value="ja">日本語</option>
+                        <option id="zh" value="zh">中文</option>
+                    </select>
+                </div>
+            </div>
+            <button id="menu_btn"><img src="./images/menu_icon.png" alt=""></button>
+        </header>
+        <main>
+            <div class="page_number">
+                <a href="#">01</a>
+                <a href="#">02</a>
+            </div>
+            <div class="hero_fixing">
+                <h1 class="hero_logo"><img src="./images/main_logo.png" alt=""></h1>
+                <div class="current_page">
+                    <a class="now" href="#"><span></span></a>
+                    <a class="next" href="#"><span></span></a>
+                </div>
+                <div class="video_bg">
+                    <video autoplay muted loop playsinline>
+                        <source src="./images/video1.mp4" type="video/mp4">
+                    </video>
+                    <video autoplay muted loop playsinline>
+                        <source src="./images/video2.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="card1">
+                <a href="#"><img src="./images/main_logo_un.png"></a>
+                <p><em>세계관광기구 (UN tourism) 선정</em></p>
+                <h1>최우수 관광마을</h1>
+                <p>제주세화마을은 2023년 10월, 유엔(UN) 산하 전문기구인 세계관광기구 (UN tourism)가 선정한 '최우수관광마을(Best Tourism Villages)'에 선정되어 국제적인 주목을 받았습니다.</p>
+                <a href="#" class="text_btn">자세히 보기</a>
+                <a href="#"><img src="./images/main1.jpg" alt=""></a>
+            </div>
+            <div class="card2">
+                <p><em>유네스코 인류무형문화유산</em></p>
+                <h1>제주 해녀 문화</h1>
+                <p>산소통없이 바닷속을 잠수하는 해녀 삼춘들의 독특한 호흡소리인 '숨비소리'는 전세계 어디서도 찾을 수 없는 제주 해녀 문화만의 상징입니다. 바다를 공유하고 함께 작업하는 독특한 공동체 정신을 바탕으로 명맥을 이어오고 있는 제주 해녀 문화는 세계가 함께 지켜가야 하는 소중한 문화유산입니다.</p>
+                <a href="#" class="text_btn">자세히 보기</a>
+                <a href="#"><img src="./images/main2.jpg" alt=""></a>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+</html>
+
+
+{ 1차 }

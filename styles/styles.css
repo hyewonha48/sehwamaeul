@@ -1,0 +1,33 @@
+#warp {}
+#warp header {}
+#warp header h1 {}
+#warp header h1 a{}
+#warp header h1 a img {}
+#warp header .right {}
+#warp header .right .lang_menu {}
+#warp header .right .lang_menu .language {}
+#warp header .right .lang_menu .language option {}
+#warp header .right .lang_menu .language #choice {}
+#warp header .right .lang_menu .language #choice #en {}
+#warp header .right .lang_menu .language #choice #ja {}
+#warp header .right .lang_menu .language #choice #zh {}
+#warp header #menu_btn {}
+#warp main .page_number {}
+#warp main .page_number a {}
+#warp main .hero_fixing {}
+#warp main .hero_fixing .hero_logo {}
+#warp main .hero_fixing .hero_logo .current_page {}
+#warp main .hero_fixing .hero_logo .current_page a {}
+#warp main .hero_fixing .hero_logo .current_page a {}
+#warp main .video_bg {}
+#warp main .video_bg video {}
+#warp main .card1 {}
+#warp main .card1 a {}
+#warp main .card1 p {}
+#warp main .card1 p em {}
+#warp main .card1 h1 {}
+#warp main .card2 {}
+#warp main .card2 p {}
+#warp main .card2 p em {}
+#warp main .card2 h1 {}
+#warp main .card2 a {}

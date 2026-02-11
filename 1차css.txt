@@ -1,0 +1,227 @@
+/* ===== reset & 기본 ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Pretendard', sans-serif;
+    color: #111;
+    background: #fff;
+    overflow-x: hidden;
+}
+
+/* ===== Wrap & Header ===== */
+#wrap {
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 100;
+}
+
+header h1 img {
+    height: 40px;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.right select {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.right button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.right button img {
+    width: 24px;
+    height: 24px;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+/* ===== Viewport & Page Number ===== */
+#viewport {
+    position: relative;
+    width: 100%;
+    height: 600px; /* 임시 높이, 필요시 100vh */
+    overflow: hidden;
+    background: #000;
+}
+
+/* 페이지 번호 우측 중앙 */
+.page_number {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 20;
+}
+
+.page_number a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.page_number a.active {
+    color: yellow;
+}
+
+/* ===== Hero 로고 중앙 & Current Page(dot 아래) ===== */
+.hero_fixing {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; 
+    pointer-events: none;
+}
+
+.hero_logo img {
+    width: 250px;
+    height: auto;
+    display: block;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+/* dot 중앙 하단, 로고 아래 위치 */
+.current_page {
+    margin-top: 30px; /* 로고 아래 여백 */
+    display: flex;
+    gap: 8px;
+    pointer-events: auto;
+}
+
+.current_page a span {
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.5);
+}
+
+.current_page a.active span {
+    background: #fff;
+}
+
+/* ===== Video Background / 슬라이드 ===== */
+.video_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.video_bg video {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: left 0.5s ease;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.video_bg video.active {
+    left: 0;
+}
+
+/* ===== Card Sections ===== */
+.un_tourism, .jeju_haenyeo {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto 100px;
+    padding: 50px 20px 20px; /* 이미지 아래 여백 포함 */
+}
+
+.un_tourism img, .jeju_haenyeo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 20px;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+/* 카드 텍스트는 이미지 아래로 이동 */
+.un_tourism p em, .jeju_haenyeo p em {
+    font-style: normal;
+    font-size: 14px;
+    color: #555;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.un_tourism h1, .jeju_haenyeo h1 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.un_tourism p, .jeju_haenyeo p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.text_btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: #111;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.text_btn:hover {
+    background: #444;
+}
+
+/* ===== Footer ===== */
+footer {
+    height: 50px;
+    background: #111;
+}
