@@ -14,25 +14,25 @@
     <div id="wrap">
         <header>
             <h1><a href="#"><img src="./images/logo.png" alt="질그랭이 세화마을"></a></h1>
-            <div class="right">
-                <select name="language">
+            <div class="right_area">
+                <select class="language" name="language">
                     <option value="">언어선택</option>
                     <!-- <option id="ko" value="ko">한국어</option> -->
                     <option id="en" value="en">English</option>
                     <option id="ja" value="ja">日本語</option>
-                    <option id="zh" value="zh">中文</option>
+                    <option id="zh" value="ch">中文</option>
                 </select>
                 <button type="button" id="menu_btn"><img src="./images/menu_icon.png" alt="메뉴열기"></button>
                 <div id="sehwa_menu_section">
                     <p>바다와 밭 그리고 장터가 모여 만든어진 세화마을의 옛 이름은 <span>'는곶'</span>(=<span>가는 곶</span>)이라고 합니다</p>
                     <div id="sehwa_menu">
-                        <div id="introduction">
+                        <div id="intro_duction">
                             <ul>
                                 <li>
                                     <a href="#">마을소개</a>
                                     <ul>
                                         <li><a href="#">세화마을소개</a></li>
-                                        <li>
+                                        <li> <!-- 돌아버려 ul li 지옥 (여까지 했음) -->
                                             <a href="#">질그랭이 거점센터</a>
                                             <ul>
                                                 <li><a href="#">센터소개</a></li>
@@ -130,7 +130,7 @@
                 <a href="#">07</a>
                 <a href="#">08</a>
             </div>
-            <div id="hero">
+            <div id="hero_banner">
                 <div id="fixing">
                     <h1><img src="./images/main_logo.png" alt="질그랭이세화마을"></h1>
                     <div id="current_page">
@@ -138,35 +138,70 @@
                         <a href="#"><span></span></a>
                         <a href="#"><span></span></a>
                     </div>
-                    <div class="video_bg">
-                        <video class="active" autoplay muted loop playsinline src="./video/video1.mp4"></video>
-                        <img src="./images/video_img_bg.jpg" alt="#">
-                        <video src="./video/video2.mp4" autoplay muted loop playsinline></video>
+                    <div id="view_video">
+                        <div class="slide_container"><!-- bg_page : 1 -->
+                            <div class="slide">1
+                                <video class="active" autoplay muted loop playsinline src="./video/video1.mp4"></video></div>
+                            <div class="slide">2
+                                <img src="./images/video_img_bg.jpg" alt="#"></div>
+                            <div class="slide">3
+                                <video src="./video/video2.mp4" autoplay muted loop playsinline></video></div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="un_tourism"> <!-- bg:img1 -->
+            <div id="un_tourism"> <!-- bg_page : 2 -->
                 <h1><img src="./images/main_logo_un.png" alt="UN tourism"></h1>
                 <p>세계관광기구 (UN tourism) 선정</p>
                 <h1>최우수 관광마을</h1>
                 <p>제주세화마을은 2023년 10월, 유엔(UN) 산하 전문기구인 세계관광기구 (UN tourism)가 선정한 '최우수관광마을(Best Tourism Villages)'에 선정되어 국제적인 주목을 받았습니다.</p>
                 <a href="#" class="detail_btn">자세히 보기</a>
             </div>
-            <div class="jeju_haenyeo"> <!-- bg:img2 -->
+            <div id="jeju_haenyeo"> <!-- bg_page : 3 -->
                 <p>유네스코 인류무형문화유산</p>
                 <h1>제주 해녀 문화</h1>
                 <p>산소통없이 바닷속을 잠수하는 해녀 삼춘들의 독특한 호흡소리인 '숨비소리'는 전세계 어디서도 찾을 수 없는 제주 해녀 문화만의 상징입니다. 바다를 공유하고 함께 작업하는 독특한 공동체 정신을 바탕으로 명맥을 이어오고 있는 제주 해녀 문화는 세계가 함께 지켜가야 하는 소중한 문화유산입니다.</p>
+                <a href="#" class="detail_btn">자세히 보기</a>
+            </div>
+            <div id="darangshu_oreum"> <!-- bg_page : 4 -->
+                <p>'제주 오름의 여왕'</p>
+                <h1>다랑쉬오름</h1>
+                <p>세화마을의 푸른 자연 속에 자리한 다랑쉬오름은 제주에서 가장 아름다운 오름 중 하나로 꼽힙니다. 한라산의 백록담을 닮은 원형 분화구가 만들어낸 독특한 지형과 정상에서 내려다보는 시원한 풍경은 방문객들에게 특별한 감동을 선사합니다. 다랑쉬오름은 단순한 오름을 넘어, 세화마을의 자랑이자 제주의 순수한 아름다움을 가장 잘 보여주는 장소입니다.</p>
+                <a href="#" class="detail_btn">자세히 보기</a>
+            </div>
+            <div id="sehwa_beach"> <!-- bg_page : 5 -->
+                <p>용천수가 솟아나는 자연의 신비</p>
+                <h1>세화해변</h1>
+                <p>만조 시간에는 밀물이 해안도로까지 근접하여 맑고 투명한 바다의 모습을 볼 수 있고, 간조 시간에는 흰 모래 백사장이 펼쳐저 걸어서 다닐 수 있는 세화해변. 용천수가 솟아나 자연의 신 비로움까지 느낄 수 있는 세화마을의 소중한 유산입니다.</p>
+                <a href="#" class="detail_btn">자세히 보기</a>
+            </div>
+            <div id="darangshu_tunnel"> <!-- bg_page : 6 -->
+                <p>자연이 만들고, 역사가 남긴 울림</p>
+                <h1>다랑쉬굴</h1>
+                <p>수천 년 전, 뜨거운 용암이 남긴 흔적 속에 제주도민만의 치열한 삶과 가슴 아픈 흔적이 깃들어 있는 곳. 세화마을의 다랑쉬굴은 단순한 동굴이 아니라 자연의 흔적과 역사의 그림자, 제주도민의 뜨거운 삶의 자취가 고스란히 남아있는 곳입니다.</p>
+                <a href="#" class="detail_btn">자세히 보기</a>
+            </div>
+            <div id="un_fao"> <!-- bg_page : 7 -->
+                <p>UN 식량농업기구 FAO 세계농업유산</p>
+                <h1>밭담</h1>
+                <p>현무암 하나, 또 하나. 그렇게 바람을 막고 땅을 지키기 위해 조성된 밭담은 자연과 사람이 함께 빚어낸 제주만의 독특한 문화유산입니다. 오늘날 밭담은 단순한 농경 시설을 넘어, 제주를 대표하는 문화경관이자 유네스코 세계농업유산으로 인정받고 있습니다.</p>
+                <a href="#" class="detail_btn">자세히 보기</a>
+            </div>
+            <div id="special_sehwa"> <!-- bg_page : 8 -->
+                <p>천혜의 자연 세화마을에서 즐기는</p>
+                <h1>특별한 경험</h1>
+                <p>전통을 이어가는 해녀삼춘, 하루에 얼굴을 바꿔 새로운 모습을 볼 수 있는 하얀 모래의 해변, 오름의 여왕이라 불리는 다랑쉬오름, 제주에서만 볼 수 있는 자연의 모습을 간직한 밭담, 제주 자연의 힐링과 다양한 볼거리를 한번에 즐길 수 있는 프로그램까지. 상상했던 제주의 모든 매력, 세화마을에서 즐겨보시기 바랍니다.</p>
                 <a href="#" class="detail_btn">자세히 보기</a>
             </div>
         </main>
         <footer>
             <div id="footer_banner">
                 <img src="./images/tele.icon.png" alt="">
-                <p>견학 및 대관문의 sehwa477@naver.com 운영시간 9시~17시 (점심시간 12시~13시)</p>
+                <p>견학 및 대관문의 sehwa477@naver.com 운영시간 9시~17시 (점심시간 12시~13시)</p> <!-- | css로 구분선 만들어줘야함 | -->
             </div>
             <div id="address_group">
                 <address>
-                    <dl>
+                    <dl id="addr">
                     <dt>상호명</dt>
                     <dd>세화마을협동조합</dd>
                     <dt>사업자등록번호</dt>
