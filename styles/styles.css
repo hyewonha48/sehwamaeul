@@ -1,0 +1,15 @@
+/* 
+body {width:1980px;}
+#wrap {}
+#wrap header {}
+#wrap main {}
+#wrap main #intro {}
+#wrap main .un_tourism {background-image:url(../images/main1.jpg); background-size:cover; width:1980px; height:900px; text-align:center; }
+#wrap main .un_tourism h1 {color:#fff; }
+#wrap main .un_tourism p {color:#fff; }
+#wrap main .un_tourism a {color:#fff; }
+#wrap main .jeju_haenyeo {background-image:url(../images/main2.jpg); background-size:cover; width:1980px; height:900px; text-align:center; }
+#wrap main .jeju_haenyeo h1 {color:#fff;}
+#wrap main .jeju_haenyeo p {color:#fff;}
+#wrap main .jeju_haenyeo a {color:#fff;}
+*/
