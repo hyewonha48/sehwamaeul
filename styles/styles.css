@@ -1,74 +1,80 @@
 /* all */
 #wrap {width:1920px;}
 /* header_lang | 언어선택 */
-#wrap header {}
+#wrap header {position: relative; z-index: 10;}
 #wrap header .logo {
-    position: absolute;
-    width:142px; height:58px;
-    top:61px; left:23px;
-    z-index: 10;
+    position: absolute; z-index: 10;
+    display: block;
+    width:142px; height:56px;
+    top:23px; left:60px;
 }
 #wrap header .logo a {}
 #wrap header .logo a img {width:100%;}
-#wrap header .right_area {}
-#wrap header .language {
-    position: absolute;
-    top: 50%; right: 50px;
-    transform: translateY(40%);
-    z-index: 10;
+#wrap header .right_area {
+    position:absolute; top:40px; right:70px; /* 강제로 위치맞춤 */
+    width:200px; height:22px;
+    display: block;
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between; align-items:center;
+    gap:70px;
 }
-#wrap header .language option {}
-#wrap header .language option #en {}
-#wrap header .language option #ja {}
-#wrap header .language option #zh {}
-#wrap header #menu_btn {
-    position: absolute;
-    top: 50%; right: 50px;
-    transform: translateY(40%);
-    z-index: 10;
+#wrap header .right_area .language {}
+#wrap header .right_area .language option {}
+#wrap header .right_area .language option::after { /* 안보이는 이유찾기 */
+    content:'▼'; display:block;
+    color:#fff;
 }
+#wrap header .right_area .language option #en {}
+#wrap header .right_area .language option #ja {}
+#wrap header .right_area .language option #zh {}
+#wrap header .right_area #menu_btn {z-index:10;}
 #wrap header #menu_btn img {}
-/* 페이지 */
+/* 메뉴디테일들
+#wrap header #sehwa_menu_section {}
+... */
+/* 히어로배너 고정:세화로고,페이지넘버 */
 #wrap main {}
 #wrap main .page_number {
-    position: absolute;
-    top: 50%; right: 50px;
-    transform: translateY(40%);
-    z-index: 10;
+    position:absolute; z-index: 10;
+    display:flex; flex-flow:column nowrap;
+    top:20%; right:47px;
 }
 #wrap main .page_number .active {}
-#wrap main .page_number a {
-    position:relative;
-    z-index:20; display:flex; flex-flow:row nowrap;
-}
-/* main | 행1 */
+#wrap main .page_number a {color:#fff; margin:28px;}
+/* main | 히어로 배너(행1) */
 #wrap main #hero_banner {}
-#wrap main #hero_banner #fixing {position: relative;}
+#wrap main #hero_banner #fixing {position:relative;}
 #wrap main #hero_banner #fixing h1 {
     position: absolute;
-    top:50%; left:50%;
     z-index:11;
 }
-#wrap main #hero_banner #fixing h1 img {}
+#wrap main #hero_banner #fixing h1 img {width:404px; height:160px; transform:translate(180%) translateY(250%);}
 #wrap main #hero_banner #fixing #current_page {
     position: absolute;
-    bottom:; left:;
     z-index:10;
 }
 #wrap main #hero_banner #fixing #current_page .active  {}
 #wrap main #hero_banner #fixing #current_page .active span {}
 #wrap main #hero_banner #fixing #current_page a {}
 #wrap main #hero_banner #fixing #current_page a span {}
-/* main | 행1 배경 */
+/* main | 히어로 배너배경(행1) */
 #wrap main #hero_banner #fixing #view_video {position: relative;/* 배경기준 */}
-#wrap main #hero_banner #fixing #view_video video {}
-#wrap main #hero_banner #fixing #view_video video,
-#wrap main #hero_banner #fixing #view_video img {
+#wrap main #hero_banner #fixing #view_video .slide_container {}
+#wrap main #hero_banner #fixing #view_video .slide_container .slide {
+    width:100vh;
+    object-fit:cover;
+    display:block;
+}
+#wrap main #hero_banner #fixing #view_video .slide_container .one {width:100%;}
+#wrap main #hero_banner #fixing #view_video .slide_container .one > .active {
+    /* video 재생중 */
     width:100%;
     height:945px;
     object-fit:cover;
     display:block;
 }
+#wrap main #hero_banner #fixing #view_video .slide_container .two > .img {}
+#wrap main #hero_banner #fixing #view_video .slide_container .Three > video {}
 #wrap main #hero_banner #fixing #view_video .slide_container {position:relative; z-index:1;}
-#wrap main #hero_banner #fixing #view_video .slide_container .slide {}
+#wrap main #hero_banner #fixing #view_video .slide_container .slide {background-size:cover;}
 #wrap main #hero_banner #fixing #view_video .slide_container .slide img {}
